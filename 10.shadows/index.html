@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --primary-color: aqua;
+        --custom-width: 330px;
+      }
+      .container {
+        background-color: beige;
+        height: 650px;
+        border: 1px solid gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        background-color: var(--primary-color);
+        width: var(--custom-width);
+        height: 330px;
+        border: 2px solid sandybrown;
+        margin: 5px;
+        padding: 5px;
+        box-shadow: 40px 20px brown;
+
+        /* blurr */
+        /* box-shadow: 10px 10px 50px brown; */
+
+        /* spread radies */
+        /* box-shadow: 10px 10px 15px 20px brown; */
+
+        /* inset */
+        /* box-shadow: inset 10px 10px 50px brown; */
+
+        /* multi shadow */
+        /* box-shadow: 10px 10px brown, 15px 8px green; */
+      }
+      h1 {
+        /* text-shadow: 2px 3px 2px red; */
+
+        /* text-shadow: yellow 10px 20px 2px; */
+
+        /* text-shadow: green 12px 13px; */
+
+        /* text-shadow: 12px 13px; */
+
+        text-shadow: 12px 13px red, 20px 21px green, 30px 33px blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="./logo.jfif" />
+        <h1>Shadow Css</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+          reiciendis beatae provident dolor facere optio, laboriosam aspernatur
+          quam rem ab?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
