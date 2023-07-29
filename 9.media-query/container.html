@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 2px solid green;
+        display: flex;
+        flex-direction: row;
+        width: 600px;
+      }
+      #boxleft {
+        background: aqua;
+        border: 2px solid blue;
+        width: 48%;
+        margin: 10px;
+        padding: 2px;
+        display: flex;
+        flex-direction: column;
+      }
+      #boxright {
+        background: blueviolet;
+        border: 2px solid red;
+        width: 48%;
+        margin: 10px;
+        padding: 2px;
+      }
+      p {
+        border: 2px solid yellowgreen;
+      }
+      @media (max-width: 769px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="boxleft">
+        <p>Text1</p>
+        <p>Text1</p>
+      </div>
+      <div id="boxright">
+        <img src="/media-query/pipe.jpg" width="200px" />
+      </div>
+    </div>
+  </body>
+</html>
